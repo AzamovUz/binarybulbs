@@ -10,3 +10,5 @@ There is an "ON"/"OFF" button that helps you switch on a hint: a set of decimal 
 
 Try yourself! I hope you enjoy it. <br>
 Thank you! 
+
+I used only plain HTML and CSS for the user interface as well as Vanilla JavaScript for making everything work. 
