@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Bulb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>BINARY BULBS</h2>
+        <div class="numbers" id="digits">
+          <div>128</div>
+          <div>64</div>
+          <div>32</div>
+          <div class="devana">16</div>
+          <div class="devana">8</div>
+          <div>4</div>
+          <div>2</div>
+          <div>1</div>
+        </div>
+        <div class="container" id="bulbs">
+          <button class="button" id="0">0</button>
+          <button class="button" id="1">0</button>
+          <button class="button" id="2">0</button>
+          <button class="button" id="3">0</button>
+          <button class="button" id="4">0</button>
+          <button class="button" id="5">0</button>
+          <button class="button" id="6">0</button>
+          <button class="button" id="7">0</button>
+        </div>
+        <button class="arrows" id="add">⬆︎</button>
+        <div id="display">0</div>
+        <button class="arrows" id="minus">⬇︎</button>
+        <button onclick="toggleLabels()" id="indices" class="toggle">OFF</button>
+        <p id="guess-number" class="represent-number">How do you represent the number <span id="gameVal"></span> in binary?</p>
+        <p id="result">You win!</p>
+        <!-- Game Mode -->
+        <div class="gameMode">
+          <!-- Trigger/Open The Modal -->
+          <button id="switchGameMode">Game Mode</button>
+      
+          <!-- The Modal -->
+          <div id="inputPopUp" class="modal">
+      
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="inputDiv">
+                <p>Input a number between 1 and 255</p>
+                <input type="number" id="nameField"><button onclick="getInfo()">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
